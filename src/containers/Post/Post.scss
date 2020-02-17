@@ -1,0 +1,46 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 200px;
+  min-height: 200px;
+  margin: 50px auto;
+  padding: 20px 50px;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0, .5),
+              inset 0 1px 0 0 rgba(255, 255, 255, .5),
+              inset 0 -1px 0 0 rgba(0,0, 0, .19);
+  .Loading {
+    margin: auto;
+  }
+}
+
+.Title, 
+.Body  {
+  text-transform: capitalize;
+}
+
+.Title {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.Body {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+.BackButton {
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: DeepSkyBlue;
+  &:focus, &:active {
+    outline: none;
+    border-color: skyblue;
+    // position:fixed;
+    top: auto;
+  }
+}
